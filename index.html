@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddy</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awsome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-bg': '#ABEF5F',
+                    }
+                }
+            }
+        }
+    </script> -->
+
+    <style>
+        .lato-bold {
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+        }
+
+        .category-border:hover {
+            border-radius: 1.5px solid rgb(12, 31, 32);
+            ;
+        }
+    </style>
+
+</head>
+
+<body class="lato-bold">
+
+    <!-- header section start -->
+    <header class="w-[92%] md:container mx-auto">
+        <!-- navbar start -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <img src="./images/logo.webp" alt=""> <a class="font-bold text-3xl ml-2">Peddy</a>
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[16px] text-gray-500">
+                        <li><a class="text-black font-bold">Home</a></li>
+                        <li>
+                            <a href="">Shop</a>
+                        </li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="navbar-end">
+
+
+                    <div class=" md:block bg-btn-bg px-5 py-3 rounded-full ml-3">
+
+                        <i class="fa-regular fa-user text-xl border-2 py-2 px-3 rounded-full"></i>
+                    </div>
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class=" bg-white border-2 p-2 ml-2 rounded-full lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block h-6 w-6 stroke-current ">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 right-1 items-center  w-32 p-2 shadow text-[16px] text-gray-500">
+                            <li><a class="text-black font-bold">Home</a></li>
+                            <li>
+                                <a href="">Shop</a>
+                            </li>
+
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- Banner section start -->
+        <section>
+            <div class="text-center items-center mx-auto">
+                <h5 class="text-xl text-[#13131399] font-bold mt-7"> Bringing Families Together ❤️‍🔥 </h5>
+                <h1 class="text-7xl font-extrabold mt-7"> Your Path to Adoption Starts Here</h1>
+                <p class="mt-7">Embark on a journey to find your perfect companion with our easy and supportive adoption
+                    platform. Browse, connect, and adopt from a variety of pets waiting for a loving home. Your path to
+                    a lifelong friendship starts here!</p>
+                <div class=" flex items-center justify-center">
+                    <button class="py-4 px-8 rounded-2xl flex bg-[#0E7A81] text-white font-bold mt-7 "><a
+                            href="#adapt-best-friend">View
+                            More</a></button>
+
+                </div>
+                <img class="mx-auto" src="./images/pet.webp" alt="">
+            </div>
+        </section>
+        <!-- Banner section end -->
+
+    </header>
+    <!-- header section end -->
+
+    <main class="w-[92%] md:container mx-auto" id="adapt-best-friend">
+        <!-- Adopt your best friend -->
+
+        <section>
+            <div class="text-center mt-9">
+                <h1 class="font-extrabold text-4xl  ">Adopt Your Best Friend</h1>
+                <p class="mt-5">Find and adopt your new best friend through our user-friendly platform. Explore a
+                    variety of pets, learn about their personalities, and bring home a loyal companion ready to share
+                    unconditional love.</p>
+            </div>
+
+            <div id="category-container" class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-9">
+
+
+            </div>
+
+            <div class="flex justify-between mt-9 items-center">
+                <h4 class="text-2xl font-extrabold">Best Deal For you</h4>
+                <button class="py-4 px-8 bg-[#0E7A81] rounded-xl text-xl text-white" id="sort-by-price">Sort by
+                    Price</button>
+            </div>
+
+            <!-- card section start-->
+
+
+            <div class="md:flex mt-9">
+                <div id="spinner" class=" text-center mx-auto hidden">
+                    <span class="text-center border-2 loading loading-bars loading-lg"></span>
+                </div>
+                <div id="item-show">
+
+                </div>
+
+                <!-- like image show -->
+                <div id="like-image"
+                    class=" md:w-1/5  mt-4 md:mt-0 border-2 md:ml-6 rounded-xl p-5 gap-6 overflow-hidden ">
+
+
+                </div>
+
+            </div>
+
+            <!-- card section end-->
+        </section>
+
+    </main>
+
+    <!-- Footer section start -->
+    <footer class="mt-12 bg-black text-white  ">
+        <div class="w-[92%] md:container mx-auto py-24 md:flex justify-between">
+
+            <div>
+                <div class="flex mb-6">
+                    <img src="./images/logo.webp" alt="">
+                    <h4 class="ml-2 text-3xl font-bold">Peddy</h4>
+                </div>
+                <p class="leading-6">Location: Dhaka-1204, Bangladesh <br>
+                    Phone: +8801718920204 <br>
+                    Email: abdulhasib2030@gmail.com <br>
+                    Openings hours: 9.00 AM - 5.00 PM</p>
+                <!-- Social media -->
+                <div class="flex gap-4 mt-4">
+                    <img src="./images/facebook.png" class="w-9" alt="">
+                    <img src="./images/logos.png" class="w-9 text-white " alt="">
+                    <img src="./images/youtube.png" class="w-9" alt="">
+                    <img src="./images/instagram.png" class="w-9" alt="">
+                </div>
+            </div>
+
+            <div class="mt-6 md:mt-0">
+                <h3 class="text-xl font-bold mb-6">Useful Links</h3>
+
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Animals</li>
+                    <li>Foundation</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="mt-6 md:mt-0">
+                <h3 class="text-xl font-bold mb-6">Drop a Message</h3>
+                <input type="text" placeholder="Enter your email"
+                    class="py-4 px-5 bg-[#FFFFFF0D]  rounded-xl mb-3 w-full"> <br>
+                <input type="button" value="Subscribe" class="py-4 px-5 bg-[#0E7A81] font-bold  rounded-xl w-full">
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer section end -->
+
+
+
+    <!-- JavaScript link -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
